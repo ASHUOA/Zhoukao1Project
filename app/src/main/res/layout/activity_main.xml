@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.fanyishuo.zhoukao1.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<com.example.fanyishuo.zhoukao1.MyCustom
+    android:id="@+id/mycustom"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    app:left_text_bg="#33ccff"
+    app:left_text_color="#ffffff"
+    app:left_text_content="返回"
+    app:left_text_size="16sp"
+    app:zhongjian_text_bg="#ff44aa"
+    app:zhongjian_text_color="#ffffff"
+    app:zhongjian_text_content="自定义标题"
+    app:zhongjian_text_size="20sp"
 
-</android.support.constraint.ConstraintLayout>
+    app:right_text_content="更多"
+    app:right_text_bg="#33ccff"
+    app:right_text_color="#ffffff"
+    app:right_text_size="16sp"
+    >
+</com.example.fanyishuo.zhoukao1.MyCustom>
+
+</RelativeLayout>
